@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
     <title>WDD 231 - Web Frontend Development</title>
 </head>
 
 <body>
-    <h1>WDD 231 - Web Frontend Development</h1>
+    <header>
+        <img src="images/logo.svg" alt="DH developer logo" width="48" height="48">
+        <span>David Hostetter</span>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        </button>
+    </header>
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 231 - Web Frontend Development</h1>
+    </main>
 </body>
 
 </html>

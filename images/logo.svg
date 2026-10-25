@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 180 120"
+     role="img"
+     aria-label="DH developer logo">
+
+  <!-- Midnight navy background -->
+  <rect width="180" height="120"
+        rx="16"
+        fill="#162437"/>
+
+  <!-- Gold code brackets -->
+  <path d="M42 35 L20 60 L42 85
+           M138 35 L160 60 L138 85"
+        stroke="#E3BD78"
+        stroke-width="6"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- DH initials -->
+  <text x="90"
+        y="73"
+        font-family="monospace"
+        font-size="47"
+        font-weight="700"
+        letter-spacing="-3"
+        text-anchor="middle"
+        fill="#E3BD78">DH</text>
+
+</svg>

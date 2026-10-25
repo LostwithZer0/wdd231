@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    header {
+        grid-column: 1;
+        grid-row: 1;
+        grid-template-columns: 48px 1fr;
+        padding: 12px 24px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #primary-nav,
+    #primary-nav.show {
+        display: block;
+        grid-column: 2;
+        grid-row: 1;
+        align-self: stretch;
+        background-color: #162437;
+    }
+
+    #primary-nav ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    #primary-nav a {
+        padding: 16px 24px;
+    }
+
+    main {
+        grid-column: 1 / -1;
+    }
+}
