@@ -14,8 +14,8 @@ header {
     color: #E3BD78;
     font-size: 2rem;
     cursor: pointer;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
 }
 
 .hamburger::before {
@@ -46,6 +46,8 @@ header {
     padding: 12px;
     color: #E3BD78;
     text-decoration: none;
+    min-height: 48px;
+    box-sizing: border-box;
 }
 
 #primary-nav a:hover {
@@ -64,16 +66,6 @@ header span {
     font-weight: 600;
 }
 
-.hamburger {
-    width: 48px;
-    height: 48px;
-}
-
-#primary-nav a {
-    min-height: 48px;
-    box-sizing: border-box;
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -83,6 +75,11 @@ body {
 
 main {
     flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    box-sizing: border-box;
 }
 
 footer {
@@ -119,22 +116,12 @@ footer {
     line-height: 1.5;
 }
 
-/* Main Content */
-
-main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 16px;
-    box-sizing: border-box;
-}
+/* Main */
 
 main h1 {
     color: #162437;
     margin-bottom: 20px;
 }
-
-/* Main Sections */
 
 main section {
     margin-bottom: 20px;
