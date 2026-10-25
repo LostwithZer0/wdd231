@@ -47,4 +47,36 @@
         grid-column: 1 / -1;
         grid-row: 3;
     }
+
+    /* Desktop Main Layout */
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        align-content: start;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .about-me {
+        grid-column: 1;
+    }
+
+    .student-photo {
+        grid-column: 2;
+    }
+
+    .certificate {
+        grid-column: 1 / -1;
+    }
+
+    /* Desktop Course Card Layout */
+
+    #course-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }

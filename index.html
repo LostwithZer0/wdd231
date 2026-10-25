@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     <title>WDD 231 - Web Frontend Development</title>
+    <meta name="description"
+        content="David Hostetter's software development course homepage featuring an introduction, student photo, and web development certificate courses at BYU-Pathway Worldwide.">
 </head>
 
 <body>
@@ -29,7 +35,46 @@
         </ul>
     </nav>
     <main>
-        <h1>WDD 231 - Web Frontend Development</h1>
+        <h1>Home</h1>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I'm David Hostetter, a software development student studying through BYU-Pathway Worldwide. I've
+                always enjoyed technology, problem-solving, and finding creative ways to turn ideas into something
+                functional. I'm especially interested in web development because it allows me to combine technical
+                skills with creativity and design.
+
+                Outside of school, I help run a small family business and enjoy working on creative projects, including
+                website design and development. I'm also an avid gamer who loves Minecraft and other games that
+                encourage creativity, exploration, and building. Most importantly, I'm a husband and proud father, and
+                spending time with my family is one of my greatest priorities.
+
+                My goal is to continue developing my programming skills, build a career in software development, and
+                create websites and applications that are both useful and enjoyable to use.
+            </p>
+        </section>
+
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+
+            <img src="images/student-photo.jpg" alt="Portrait of David Hostetter" width="400" height="400">
+        </section>
+
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button id="all" type="button">All</button>
+                <button id="cse" type="button">CSE</button>
+                <button id="wdd" type="button">WDD</button>
+            </div>
+
+            <div id="course-cards"></div>
+
+            <p id="total-credits"></p>
+        </section>
     </main>
     <footer>
         <div class="social-links">

@@ -74,12 +74,11 @@ header span {
     box-sizing: border-box;
 }
 
-/* Footer */
-
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
 main {
@@ -118,4 +117,132 @@ footer {
     margin: 6px 0;
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+/* Main Content */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    box-sizing: border-box;
+}
+
+main h1 {
+    color: #162437;
+    margin-bottom: 20px;
+}
+
+/* Main Sections */
+
+main section {
+    margin-bottom: 20px;
+    border: 1px solid #D6DCE3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main section h2 {
+    background-color: #162437;
+    color: #E3BD78;
+    padding: 12px 16px;
+    margin: 0;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.about-me p {
+    padding: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Student Photo */
+
+.student-photo {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.student-photo img {
+    display: block;
+    width: calc(100% - 32px);
+    max-width: 300px;
+    height: auto;
+    margin: 16px auto 0;
+    border-radius: 8px;
+}
+
+/* Certificate Course Cards */
+
+#course-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+}
+
+.course-card {
+    background-color: #E8ECF1;
+    color: #162437;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #C5CDD6;
+}
+
+.course-card.completed {
+    background-color: #162437;
+    color: #E3BD78;
+    border-color: #162437;
+}
+
+/* Course Filter Buttons */
+
+.course-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 16px 4px;
+}
+
+.course-filters button {
+    flex: 1;
+    max-width: 180px;
+    min-height: 48px;
+    padding: 12px 16px;
+    background-color: #344B65;
+    color: #FFFFFF;
+    border: 2px solid #344B65;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.course-filters button:hover {
+    background-color: #456382;
+    color: #FFFFFF;
+}
+
+.course-filters button.active {
+    background-color: #E3BD78;
+    color: #162437;
+    border-color: #162437;
+}
+
+/* Course credit total */
+#total-credits {
+    background-color: #F5F7FA;
+    color: #162437;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 16px;
+    margin: 0 16px 16px;
+    border: 1px solid #D6DCE3;
+    border-radius: 8px;
 }
