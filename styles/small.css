@@ -1,6 +1,6 @@
 header {
     display: grid;
-    grid-template-columns: 48px 1fr 44px;
+    grid-template-columns: 60px 1fr;
     align-items: center;
     gap: 12px;
     padding: 12px;
@@ -50,4 +50,26 @@ header {
 
 #primary-nav a:hover {
     background-color: #263D57;
+}
+
+#primary-nav .current a {
+    background-color: #344B65;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+header span {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.hamburger {
+    width: 48px;
+    height: 48px;
+}
+
+#primary-nav a {
+    min-height: 48px;
+    box-sizing: border-box;
 }
