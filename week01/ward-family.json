@@ -1,0 +1,23 @@
+{
+    "familyName": "Anderson",
+    "moveInDate": "2026-10-15",
+    "numberOfPeople": 3,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "James Anderson",
+            "gender": "Male",
+            "birthdate": "1990-04-12"
+        },
+        {
+            "name": "Emily Anderson",
+            "gender": "Female",
+            "birthdate": "1992-07-21"
+        },
+        {
+            "name": "Oliver Anderson",
+            "gender": "Male",
+            "birthdate": "2020-03-15"
+        }
+    ]
+}
