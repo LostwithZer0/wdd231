@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Snake River Outfitters",
+    "address": "120 Riverwalk Avenue, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0100",
+    "website": "https://example.com/?business=outfitters",
+    "image": "outfitters.svg",
+    "membership": 3,
+    "category": "outfitters"
+  },
+  {
+    "name": "Falls Coffee Roasters",
+    "address": "84 Parkside Street, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0101",
+    "website": "https://example.com/?business=coffee",
+    "image": "coffee.svg",
+    "membership": 2,
+    "category": "coffee"
+  },
+  {
+    "name": "Teton Tech Solutions",
+    "address": "310 Innovation Way, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0102",
+    "website": "https://example.com/?business=technology",
+    "image": "technology.svg",
+    "membership": 3,
+    "category": "technology"
+  },
+  {
+    "name": "Riverbend Family Dentistry",
+    "address": "425 Cedar Lane, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0103",
+    "website": "https://example.com/?business=dentistry",
+    "image": "dentistry.svg",
+    "membership": 1,
+    "category": "dentistry"
+  },
+  {
+    "name": "Mountain View Books",
+    "address": "66 Broadway Plaza, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0104",
+    "website": "https://example.com/?business=books",
+    "image": "books.svg",
+    "membership": 2,
+    "category": "books"
+  },
+  {
+    "name": "Eagle Rock Garden Center",
+    "address": "705 Sunnyside Road, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0105",
+    "website": "https://example.com/?business=garden",
+    "image": "garden.svg",
+    "membership": 1,
+    "category": "garden"
+  },
+  {
+    "name": "Sagebrush Creative Studio",
+    "address": "190 Willow Street, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0106",
+    "website": "https://example.com/?business=creative",
+    "image": "creative.svg",
+    "membership": 2,
+    "category": "creative"
+  },
+  {
+    "name": "Pioneer Bicycle Works",
+    "address": "240 Trailhead Drive, Idaho Falls, ID 83402",
+    "phone": "(208) 555-0107",
+    "website": "https://example.com/?business=bicycles",
+    "image": "bicycles.svg",
+    "membership": 1,
+    "category": "bicycles"
+  }
+]

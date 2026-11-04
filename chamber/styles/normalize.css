@@ -1,0 +1,29 @@
+/* Minimal CSS reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+button,
+input {
+    font: inherit
+}
+
+a {
+    color: inherit
+}

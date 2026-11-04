@@ -1,0 +1,404 @@
+:root {
+    --navy: #112c40;
+    --blue: #17648b;
+    --gold: #e3b45a;
+    --paper: #f4f7f9;
+    --ink: #1a2c38;
+    --muted: #506273;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f2b544;
+    outline-offset: 3px;
+}
+
+/* Header */
+
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 12px #112c4012;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 15px 0 0;
+    text-decoration: none;
+    color: var(--navy);
+}
+
+.brand img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.brand strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.08rem;
+    font-weight: 800;
+    display: block;
+}
+
+.brand small {
+    display: block;
+    font-size: .76rem;
+    letter-spacing: .05em;
+}
+
+.menu-button {
+    border: 1px solid #bdcbd4;
+    background: #fff;
+    border-radius: 7px;
+    padding: 5px 12px;
+    font-size: 1.5rem;
+    color: var(--navy);
+    cursor: pointer;
+}
+
+.primary-nav {
+    display: none;
+    flex-basis: 100%;
+    padding-top: 12px;
+}
+
+.primary-nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-nav a {
+    padding: 12px 15px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    color: var(--navy);
+}
+
+.primary-nav a:hover,
+.primary-nav a[aria-current] {
+    background: #e4f1f8;
+    color: #114e72;
+}
+
+/* Hero */
+
+.intro {
+    background: linear-gradient(115deg,
+            #102d42,
+            #155d82);
+    color: #fff;
+}
+
+.intro-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 58px 20px 62px;
+}
+
+.intro h1 {
+    font-size: clamp(2.15rem, 6vw, 3.7rem);
+    margin: 12px 0;
+}
+
+.intro p:last-child {
+    max-width: 620px;
+    font-size: 1.08rem;
+    color: #e4f1f6;
+}
+
+/* Eyebrow Text - Improved Contrast */
+
+.eyebrow {
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .16em;
+    color: #80500a;
+}
+
+.intro .eyebrow {
+    color: #f2c56c;
+}
+
+/* Directory */
+
+.directory-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 42px 18px 70px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+}
+
+.section-heading h2 {
+    margin: 6px 0;
+    font-size: 1.8rem;
+}
+
+.view-controls {
+    display: flex;
+    gap: 6px;
+    background: #e3eaf0;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.view-controls button {
+    background: transparent;
+    border: 0;
+    border-radius: 6px;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #263e4d;
+    font-weight: 700;
+}
+
+.view-controls button.active {
+    background: var(--navy);
+    color: #fff;
+}
+
+/* Grid Layout */
+
+.members-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+}
+
+/*
+   Reserve space before JSON loads.
+   This prevents the footer from jumping
+   when business cards are inserted.
+*/
+
+.members-grid[aria-busy="true"] {
+    min-height: 2200px;
+}
+
+.loading-message {
+    margin: 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dce5ea;
+    border-radius: 12px;
+    align-self: start;
+}
+
+/* Member Cards */
+
+.member-card {
+    background: #fff;
+    border: 1px solid #dce5ea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #1b39480b;
+    min-width: 0;
+}
+
+.member-card img {
+    display: block;
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    background: #dcebf2;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h3 {
+    margin: 0 0 9px;
+    font-size: 1.16rem;
+    color: var(--navy);
+}
+
+.member-info p {
+    margin: 5px 0;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+}
+
+.member-info a {
+    color: #12577c;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.level {
+    display: inline-block;
+    background: #eaf2f7;
+    color: #164b6a;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: .74rem;
+    font-weight: 800;
+    margin-bottom: 11px;
+}
+
+.level.gold {
+    background: #fff0ca;
+    color: #79510b;
+}
+
+.level.silver {
+    background: #e9edf0;
+    color: #43515d;
+}
+
+/* List Layout */
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.members-list .member-card {
+    display: block;
+    padding: 16px 20px;
+}
+
+.members-list .member-card img {
+    display: none;
+}
+
+.members-list .member-info {
+    padding: 0;
+}
+
+.members-list .member-info h3 {
+    margin: 0 0 5px;
+}
+
+/* Footer */
+
+.site-footer {
+    background: #102b3d;
+    color: #eef4f7;
+    padding: 38px 18px 18px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    gap: 26px;
+}
+
+.site-footer h2 {
+    font-size: 1rem;
+    margin: 0 0 12px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.site-footer a {
+    color: #f5d58d;
+}
+
+.footer-meta {
+    font-size: .9rem;
+}
+
+/* Social Media Icons */
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #f1c66d;
+    border: 1px solid rgba(241, 198, 109, 0.4);
+    border-radius: 50%;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    background-color: #f1c66d;
+    color: #102d40;
+    transform: translateY(-2px);
+}
+
+.footer-links a:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+}
+
+.footer-links svg {
+    width: 22px;
+    height: 22px;
+}
+
+.demo-note {
+    max-width: 1200px;
+    margin: 30px auto 0 !important;
+    border-top: 1px solid #476171;
+    padding-top: 15px;
+    font-size: .78rem;
+    color: #c8d6de;
+}
