@@ -7,6 +7,8 @@
     --muted: #506273;
 }
 
+/* Global Styles */
+
 * {
     box-sizing: border-box;
 }
@@ -17,7 +19,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     color: var(--ink);
     background: var(--paper);
     line-height: 1.5;
@@ -26,7 +28,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.2;
 }
 
@@ -75,7 +77,7 @@ button:focus-visible {
 }
 
 .brand strong {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.08rem;
     font-weight: 800;
     display: block;
@@ -122,10 +124,11 @@ button:focus-visible {
     color: #114e72;
 }
 
-/* Hero */
+/* Hero Section - Accessible Background */
 
 .intro {
-    background: linear-gradient(115deg,
+    background-color: #102d42;
+    background-image: linear-gradient(115deg,
             #102d42,
             #155d82);
     color: #fff;
@@ -140,6 +143,7 @@ button:focus-visible {
 .intro h1 {
     font-size: clamp(2.15rem, 6vw, 3.7rem);
     margin: 12px 0;
+    color: #fff;
 }
 
 .intro p:last-child {
@@ -148,7 +152,7 @@ button:focus-visible {
     color: #e4f1f6;
 }
 
-/* Eyebrow Text - Improved Contrast */
+/* Eyebrow Text */
 
 .eyebrow {
     font-size: .75rem;
@@ -161,7 +165,7 @@ button:focus-visible {
     color: #f2c56c;
 }
 
-/* Directory */
+/* Directory Section */
 
 .directory-section {
     max-width: 1200px;
@@ -215,10 +219,10 @@ button:focus-visible {
 }
 
 /*
-   Reserve space before JSON loads.
-   This prevents the footer from jumping
-   when business cards are inserted.
-*/
+ * Reserve space before JSON loads.
+ * This prevents the footer from jumping
+ * when business cards are inserted.
+ */
 
 .members-grid[aria-busy="true"] {
     min-height: 2200px;
