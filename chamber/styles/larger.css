@@ -82,3 +82,17 @@
         text-align: right;
     }
 }
+
+
+/* Home Page Desktop Layout */
+
+@media (min-width: 640px) {
+    .home-content {
+        grid-template-columns: 2fr 1fr;
+        padding: 40px 24px;
+    }
+
+    #spotlights.members-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

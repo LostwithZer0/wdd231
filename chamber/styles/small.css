@@ -353,3 +353,100 @@ button:focus-visible {
     color: #c8d6de;
     font-size: .8rem;
 }
+
+
+/* Home Page */
+
+.hero {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 12 / 5;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(1.3rem, 4vw, 2.5rem);
+}
+
+.join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #f2c56c;
+    color: #112c40;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.join-button:hover {
+    background: #ffe0a0;
+}
+
+.home-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 18px;
+    display: grid;
+    gap: 20px;
+}
+
+.events,
+.weather {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid #dce5ea;
+    border-radius: 8px;
+    background: white;
+}
+
+.events h2,
+.weather h2 {
+    margin-top: 0;
+    color: var(--navy);
+}
+
+.events article+article {
+    border-top: 1px solid #dce5ea;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.events h3,
+.weather h3 {
+    color: var(--navy);
+}
+
+#forecast p {
+    margin: 8px 0;
+}
+
+
+#spotlights[aria-busy="true"] {
+    min-height: 200px;
+}
+
+.home-content+.directory-section {
+    padding-top: 10px;
+}
