@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join the Idaho Falls Chamber of Commerce. Explore membership levels and apply online.">
+    <meta name="author" content="David Hostetter">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Join | Idaho Falls Chamber of Commerce">
+    <meta property="og:description" content="Apply for membership with the Idaho Falls Chamber of Commerce.">
+    <meta property="og:image" content="https://lostwithzer0.github.io/wdd231/chamber/images/chamber-logo.webp">
+    <meta property="og:url" content="https://lostwithzer0.github.io/wdd231/chamber/join.html">
+
+    <title>Join | Idaho Falls Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Idaho Falls Chamber of Commerce home">
+                <img src="images/chamber-logo.webp" alt="" width="54" height="54">
+                <span>
+                    <strong>Idaho Falls</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation"
+                aria-expanded="false" aria-controls="primary-nav">☰</button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" aria-current="page">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <h1>Join the Chamber</h1>
+        <p>Become part of the Idaho Falls business community. Complete the application below to get started.</p>
+
+        <div class="join-layout">
+            <section class="application-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+                    <label>
+                        First Name *
+                        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name *
+                        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="organizationTitle"
+                            title="Use at least seven letters, spaces, or hyphens" autocomplete="organization-title"
+                            pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address *
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                            placeholder="example@email.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone *
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Business / Organization Name *
+                        <input type="text" name="organization" title="Enter your business or organization name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Membership Level *
+                        <select name="membership" title="Select a membership level" required>
+                            <option value="">Select a membership</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea name="description" rows="5" title="Describe your business or organization"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit" class="submit-button">
+                        Submit Application
+                    </button>
+                </form>
+            </section>
+
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>Free</p>
+                        <a href="#np-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>$100 / year</p>
+                        <a href="#bronze-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>$250 / year</p>
+                        <a href="#silver-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>$500 / year</p>
+                        <a href="#gold-modal" class="modal-link">View Benefits</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-modal" class="membership-modal" aria-labelledby="np-title">
+            <h2 id="np-title">NP Membership</h2>
+            <p><strong>Cost:</strong> Free</p>
+            <ul>
+                <li>Business directory listing</li>
+                <li>Community networking opportunities</li>
+                <li>Chamber newsletters</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal" class="membership-modal" aria-labelledby="bronze-title">
+            <h2 id="bronze-title">Bronze Membership</h2>
+            <p><strong>Cost:</strong> $100 / year</p>
+            <ul>
+                <li>All NP membership benefits</li>
+                <li>Business training workshops</li>
+                <li>Discounted chamber events</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal" class="membership-modal" aria-labelledby="silver-title">
+            <h2 id="silver-title">Silver Membership</h2>
+            <p><strong>Cost:</strong> $250 / year</p>
+            <ul>
+                <li>All Bronze membership benefits</li>
+                <li>Advertising opportunities</li>
+                <li>Business spotlight consideration</li>
+                <li>Additional event discounts</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal" class="membership-modal" aria-labelledby="gold-title">
+            <h2 id="gold-title">Gold Membership</h2>
+            <p><strong>Cost:</strong> $500 / year</p>
+            <ul>
+                <li>All Silver membership benefits</li>
+                <li>Priority business spotlight placement</li>
+                <li>Premium advertising opportunities</li>
+                <li>Exclusive networking events</li>
+                <li>Complimentary training sessions</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <h2>Idaho Falls Chamber of Commerce</h2>
+                <p>Idaho Falls, Idaho</p>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a> (demo)</p>
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                        fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z" />
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none" />
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                        fill="currentColor" aria-hidden="true">
+
+                        <path
+                            d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.46 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.29 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.99 0 3.58 1.97 3.58 4.53v5.24Z" />
+                    </svg>
+                </a>
+
+            </div>
+
+
+            <div class="footer-meta">
+                <p>&copy; <span id="current-year"></span> Idaho Falls Chamber</p>
+                <p>David Hostetter | WDD 231</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+
+        <p class="demo-note">
+            Educational demonstration website.
+            Business names and contact information are fictional.
+        </p>
+    </footer>
+</body>
+
+</html>

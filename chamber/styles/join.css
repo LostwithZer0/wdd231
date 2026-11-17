@@ -1,0 +1,234 @@
+/* Join Page */
+.join-main,
+.thankyou-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.join-main>h1,
+.thankyou-main h1 {
+    color: #112c40;
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.application-section,
+.membership-section,
+.confirmation-card {
+    min-width: 0;
+}
+
+.application-section h2,
+.membership-section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Application Form */
+.application-section form {
+    background-color: #f4f7f9;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.application-section label {
+    display: block;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
+
+.application-section input:not([type="hidden"]),
+.application-section select,
+.application-section textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: white;
+    color: #222;
+    font: inherit;
+}
+
+.application-section textarea {
+    resize: vertical;
+}
+
+.submit-button,
+.return-button {
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #17648b;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.return-button:hover {
+    background-color: #112c40;
+    color: white;
+}
+
+/* Membership Cards */
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f7f9;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    animation: fadeInUp 0.7s ease-out both;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.membership-card h3 {
+    margin-top: 0;
+    color: #112c40;
+}
+
+.membership-card p {
+    font-weight: 600;
+}
+
+.modal-link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    background-color: #17648b;
+    color: white;
+    text-decoration: none;
+}
+
+.modal-link:hover {
+    background-color: #112c40;
+    color: white;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Membership Modals */
+.membership-modal {
+    width: 90%;
+    max-width: 500px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #222;
+    box-shadow: 0 0 2rem rgb(0 0 0 / 30%);
+}
+
+.membership-modal::backdrop {
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.membership-modal h2 {
+    margin-top: 0;
+    color: #112c40;
+}
+
+.membership-modal li {
+    margin-bottom: 0.75rem;
+}
+
+.close-modal {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #17648b;
+    color: white;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background-color: #112c40;
+}
+
+/* Confirmation Page */
+.thankyou-main {
+    max-width: 750px;
+}
+
+.confirmation-card {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f7f9;
+}
+
+.confirmation-details {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.confirmation-details p {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd;
+    overflow-wrap: anywhere;
+}
+
+/* Keyboard Accessibility */
+.application-section input:focus-visible,
+.application-section select:focus-visible,
+.application-section textarea:focus-visible,
+.submit-button:focus-visible,
+.modal-link:focus-visible,
+.close-modal:focus-visible,
+.return-button:focus-visible {
+    outline: 3px solid #e3b45a;
+    outline-offset: 3px;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    .join-layout {
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+    }
+}
