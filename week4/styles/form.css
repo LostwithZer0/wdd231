@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #222;
+}
+
+header,
+footer {
+    background-color: #112c40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+form,
+#confirmation {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: #17648b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #112c40;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #e3b45a;
+    outline-offset: 3px;
+}
+
+#confirmation p {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #17648b;
+}

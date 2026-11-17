@@ -233,3 +233,51 @@ main section h2 {
     border: 1px solid #D6DCE3;
     border-radius: 8px;
 }
+
+
+/* Course Details Modal */
+dialog {
+    width: 90%;
+    max-width: 600px;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #222;
+    box-shadow: 0 0 2rem rgb(0 0 0 / 30%);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 60%);
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+dialog h3 {
+    margin-top: 0.5rem;
+}
+
+dialog p {
+    line-height: 1.6;
+}
+
+dialog button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #ddd;
+}
+
+dialog button:focus-visible {
+    outline: 3px solid #17648b;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 advanced forms learning activity.">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <main>
+        <h2>Enter Your Information</h2>
+
+        <form method="get" action="form-confirmation.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </fieldset>
+
+            <fieldset>
+                <legend>Registration Details</legend>
+
+                <label for="course">Select a Course</label>
+                <select id="course" name="course" required>
+                    <option value="">Choose a course</option>
+                    <option value="WDD 131">WDD 131</option>
+                    <option value="WDD 231">WDD 231</option>
+                    <option value="CSE 210">CSE 210</option>
+                </select>
+
+                <p>Preferred Learning Format</p>
+
+                <label>
+                    <input type="radio" name="format" value="Online" required>
+                    Online
+                </label>
+
+                <label>
+                    <input type="radio" name="format" value="In Person">
+                    In Person
+                </label>
+
+                <label for="startDate">Preferred Start Date</label>
+                <input type="date" id="startDate" name="startDate" required>
+
+                <label>
+                    <input type="checkbox" name="updates" value="Yes">
+                    Receive Course Updates
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>WDD 231 | Week 04 Learning Activity</p>
+    </footer>
+</body>
+
+</html>
