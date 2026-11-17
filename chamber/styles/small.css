@@ -450,3 +450,109 @@ button:focus-visible {
 .home-content+.directory-section {
     padding-top: 10px;
 }
+
+
+/* Join and Thank You Pages */
+.join-main,
+.thankyou-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 18px;
+}
+
+.join-layout,
+.membership-cards {
+    display: grid;
+    gap: 20px;
+}
+
+.join-layout {
+    margin-top: 20px;
+}
+
+.application-section form,
+.membership-card,
+.confirmation-card {
+    padding: 20px;
+    border: 1px solid #dce5ea;
+    border-radius: 8px;
+    background: white;
+}
+
+.application-section label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.application-section input:not([type="hidden"]),
+.application-section select,
+.application-section textarea {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font: inherit;
+}
+
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--navy);
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.membership-card {
+    animation: appear .6s ease-out both;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-modal {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #dce5ea;
+    border-radius: 8px;
+}
+
+.membership-modal::backdrop {
+    background: rgb(0 0 0 / 60%);
+}
+
+.thankyou-main {
+    max-width: 750px;
+}
+
+.confirmation-details {
+    padding: 15px;
+    background: var(--paper);
+}
+
+.confirmation-details p {
+    overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+    }
+}

@@ -96,3 +96,12 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+
+/* Join Page Desktop Layout */
+@media (min-width: 768px) {
+    .join-layout {
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
+}
