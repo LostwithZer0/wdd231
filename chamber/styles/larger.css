@@ -84,8 +84,6 @@
 }
 
 
-/* Home Page Desktop Layout */
-
 @media (min-width: 640px) {
     .home-content {
         grid-template-columns: 2fr 1fr;
@@ -98,7 +96,6 @@
 }
 
 
-/* Join Page Desktop Layout */
 @media (min-width: 768px) {
     .join-layout {
         grid-template-columns: 3fr 2fr;
