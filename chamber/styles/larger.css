@@ -83,7 +83,6 @@
     }
 }
 
-
 @media (min-width: 640px) {
     .home-content {
         grid-template-columns: 2fr 1fr;
@@ -100,5 +99,62 @@
     .join-layout {
         grid-template-columns: 3fr 2fr;
         align-items: start;
+    }
+}
+
+@media (min-width: 641px) {
+
+    .discover-grid {
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+
+    .discover-card {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "photo title"
+            "photo address"
+            "photo description"
+            "button button";
+        align-items: start;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .discover-card {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "title title"
+            "photo address"
+            "photo description"
+            "button button";
+    }
+}
+
+@media (min-width: 641px) and (hover: hover) {
+
+    .discover-card img {
+        transition: filter .3s ease;
+    }
+
+    .discover-card img:hover {
+        filter: brightness(1.15);
     }
 }
