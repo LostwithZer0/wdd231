@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     line-height: 1.5;
     color: var(--ink);
     background: var(--paper);
@@ -34,29 +34,305 @@ button:focus-visible {
     outline-offset: 3px;
 }
 
-/* Header */
-
-.site-header {
-    background: white;
+.site-header,
+.menu-button,
+.loading-message,
+.member-card,
+.events,
+.weather,
+.application-section form,
+.membership-card,
+.confirmation-card,
+.discover-card {
+    background: #ffffff;
 }
 
-.header-inner {
+.header-inner,
+.intro-inner,
+.directory-section,
+.footer-inner,
+.demo-note,
+.hero,
+.home-content,
+.join-main,
+.thankyou-main,
+.discover-main {
     max-width: 1200px;
+}
+
+.header-inner,
+.intro-inner,
+.directory-section,
+.footer-inner,
+.hero,
+.home-content,
+.join-main,
+.thankyou-main,
+.discover-main {
     margin: auto;
-    padding: 12px 18px;
+}
+
+.header-inner,
+.brand,
+.section-heading,
+.view-controls,
+.members-list,
+.footer-links,
+.hero-content {
     display: flex;
+}
+
+.header-inner,
+.brand,
+.section-heading,
+.footer-links,
+.footer-links a,
+.hero-content {
     align-items: center;
-    justify-content: space-between;
+}
+
+.header-inner,
+.section-heading,
+.footer-links {
     flex-wrap: wrap;
 }
 
+.brand,
+.menu-button,
+.primary-nav a,
+.view-controls button,
+.member-info h3,
+.events h2,
+.weather h2,
+.events h3,
+.weather h3,
+.visitor-message,
+.discover-card h2 {
+    color: var(--navy);
+}
+
+.brand,
+.primary-nav a,
+.footer-links a,
+.join-button,
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal {
+    text-decoration: none;
+}
+
+.brand strong,
+.brand small,
+.member-card img,
+.hero img,
+.application-section label,
+.application-section input:not([type="hidden"]),
+.application-section select,
+.application-section textarea,
+.discover-card img {
+    display: block;
+}
+
+.menu-button,
+.view-controls,
+.join-button,
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal,
+.visitor-message,
+.discover-card img,
+.discover-card button {
+    border-radius: 6px;
+}
+
+.menu-button,
+.view-controls button,
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal,
+.discover-card button {
+    cursor: pointer;
+}
+
+.primary-nav a,
+.eyebrow,
+.view-controls button,
+.member-info a,
+.level,
+.join-button,
+.application-section label,
+.visitor-message p {
+    font-weight: bold;
+}
+
+.intro,
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal,
+.discover-card button {
+    background: var(--navy);
+}
+
+.intro,
+.hero-content,
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal,
+.discover-card button {
+    color: #ffffff;
+}
+
+.section-heading,
+.footer-links,
+.hero-content {
+    gap: 16px;
+}
+
+.members-grid,
+.footer-inner,
+.home-content,
+.join-layout,
+.membership-cards,
+.discover-grid,
+.discover-card {
+    display: grid;
+}
+
+.members-grid,
+.home-content,
+.join-layout,
+.membership-cards,
+.discover-grid {
+    gap: 20px;
+}
+
+.member-card,
+.events,
+.weather,
+.discover-card {
+    min-width: 0;
+}
+
+.member-card,
+.events,
+.weather,
+.application-section form,
+.membership-card,
+.confirmation-card,
+.membership-modal,
+.discover-card {
+    border: 1px solid #dce5ea;
+    border-radius: 8px;
+}
+
+.member-card img,
+.hero img,
+.application-section input:not([type="hidden"]),
+.application-section select,
+.application-section textarea,
+.discover-card img {
+    width: 100%;
+}
+
+.member-card img,
+.hero img,
+.discover-card img {
+    object-fit: cover;
+}
+
+.member-info,
+.events,
+.weather,
+.application-section form,
+.membership-card,
+.confirmation-card,
+.membership-modal,
+.discover-card {
+    padding: 20px;
+}
+
+.member-info p,
+.site-footer p {
+    margin: 5px 0;
+}
+
+.member-info p,
+.member-info a,
+.confirmation-details p {
+    overflow-wrap: anywhere;
+}
+
+.level,
+.join-button,
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal {
+    display: inline-block;
+}
+
+.hero-content,
+.confirmation-details {
+    padding: 15px;
+}
+
+.hero h1,
+.visitor-message p,
+.discover-card h2,
+.discover-card figure,
+.discover-card p {
+    margin: 0;
+}
+
+.home-content,
+.join-main,
+.thankyou-main,
+.discover-main {
+    padding: 30px 18px;
+}
+
+.application-section input:not([type="hidden"]),
+.application-section select,
+.application-section textarea,
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal,
+.discover-card button {
+    font: inherit;
+}
+
+.submit-button,
+.return-button,
+.modal-link,
+.close-modal,
+.discover-card button {
+    padding: 10px 15px;
+    border: 0;
+}
+
+.discover-grid,
+.discover-card {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.header-inner,
+.section-heading {
+    justify-content: space-between;
+}
+
+.header-inner {
+    padding: 12px 18px;
+}
+
 .brand {
-    display: flex;
-    align-items: center;
     gap: 8px;
     padding-right: 15px;
-    color: var(--navy);
-    text-decoration: none;
 }
 
 .brand img {
@@ -66,23 +342,17 @@ button:focus-visible {
 }
 
 .brand strong {
-    display: block;
     font-size: 1.08rem;
 }
 
 .brand small {
-    display: block;
     font-size: .76rem;
 }
 
 .menu-button {
     padding: 5px 12px;
     border: 1px solid #bdcbd4;
-    border-radius: 6px;
-    background: white;
-    color: var(--navy);
     font-size: 1.5rem;
-    cursor: pointer;
 }
 
 .primary-nav {
@@ -98,9 +368,6 @@ button:focus-visible {
 
 .primary-nav a {
     padding: 12px 15px;
-    color: var(--navy);
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .primary-nav a:hover,
@@ -109,16 +376,7 @@ button:focus-visible {
     color: #114e72;
 }
 
-/* Introduction */
-
-.intro {
-    background: var(--navy);
-    color: white;
-}
-
 .intro-inner {
-    max-width: 1200px;
-    margin: auto;
     padding: 50px 20px;
 }
 
@@ -134,7 +392,6 @@ button:focus-visible {
 
 .eyebrow {
     font-size: .8rem;
-    font-weight: bold;
     color: #80500a;
 }
 
@@ -142,20 +399,11 @@ button:focus-visible {
     color: #f2c56c;
 }
 
-/* Directory */
-
 .directory-section {
-    max-width: 1200px;
-    margin: auto;
     padding: 40px 18px;
 }
 
 .section-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
     margin-bottom: 24px;
 }
 
@@ -164,33 +412,24 @@ button:focus-visible {
 }
 
 .view-controls {
-    display: flex;
     gap: 6px;
     padding: 5px;
     background: #e3eaf0;
-    border-radius: 6px;
 }
 
 .view-controls button {
     padding: 8px 15px;
     border: none;
     background: transparent;
-    color: var(--navy);
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .view-controls button.active {
     background: var(--navy);
-    color: white;
+    color: #ffffff;
 }
 
-/* Member Grid */
-
 .members-grid {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
 }
 
 .members-grid[aria-busy="true"] {
@@ -199,57 +438,36 @@ button:focus-visible {
 
 .loading-message {
     padding: 24px;
-    background: white;
 }
 
-/* Member Cards */
-
 .member-card {
-    min-width: 0;
-    background: white;
-    border: 1px solid #dce5ea;
-    border-radius: 8px;
     overflow: hidden;
 }
 
 .member-card img {
-    display: block;
-    width: 100%;
     height: 165px;
-    object-fit: cover;
     background: #dcebf2;
-}
-
-.member-info {
-    padding: 20px;
 }
 
 .member-info h3 {
     margin: 0 0 9px;
-    color: var(--navy);
 }
 
 .member-info p {
-    margin: 5px 0;
     color: var(--muted);
-    overflow-wrap: anywhere;
 }
 
 .member-info a {
     color: #12577c;
-    font-weight: bold;
-    overflow-wrap: anywhere;
 }
 
 .level {
-    display: inline-block;
     margin-bottom: 10px;
     padding: 4px 9px;
     border-radius: 15px;
     background: #eaf2f7;
     color: #164b6a;
     font-size: .75rem;
-    font-weight: bold;
 }
 
 .level.gold {
@@ -262,10 +480,7 @@ button:focus-visible {
     color: #43515d;
 }
 
-/* List View */
-
 .members-list {
-    display: flex;
     flex-direction: column;
     gap: 10px;
 }
@@ -283,8 +498,6 @@ button:focus-visible {
     padding: 0;
 }
 
-/* Footer */
-
 .site-footer {
     padding: 38px 18px 18px;
     background: #102b3d;
@@ -292,18 +505,11 @@ button:focus-visible {
 }
 
 .footer-inner {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
     gap: 26px;
 }
 
 .site-footer h2 {
     font-size: 1rem;
-}
-
-.site-footer p {
-    margin: 5px 0;
 }
 
 .site-footer a {
@@ -314,25 +520,14 @@ button:focus-visible {
     font-size: .9rem;
 }
 
-/* Social Links */
-
-.footer-links {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
 .footer-links a {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
     border: 1px solid #f1c66d;
     border-radius: 50%;
     color: #f1c66d;
-    text-decoration: none;
 }
 
 .footer-links a:hover {
@@ -346,7 +541,6 @@ button:focus-visible {
 }
 
 .demo-note {
-    max-width: 1200px;
     margin: 30px auto 0;
     padding-top: 15px;
     border-top: 1px solid #476171;
@@ -354,77 +548,41 @@ button:focus-visible {
     font-size: .8rem;
 }
 
-
-/* Home Page */
-
 .hero {
     position: relative;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
     height: auto;
     aspect-ratio: 12 / 5;
-    object-fit: cover;
 }
 
 .hero-content {
     position: absolute;
     inset: 0;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 16px;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.45);
-    color: white;
+    background: #00000073;
     text-align: center;
 }
 
 .hero h1 {
-    margin: 0;
     font-size: clamp(1.3rem, 4vw, 2.5rem);
 }
 
 .join-button {
-    display: inline-block;
     padding: 10px 20px;
-    border-radius: 6px;
     background: #f2c56c;
     color: #112c40;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .join-button:hover {
     background: #ffe0a0;
 }
 
-.home-content {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 18px;
-    display: grid;
-    gap: 20px;
-}
-
-.events,
-.weather {
-    min-width: 0;
-    padding: 20px;
-    border: 1px solid #dce5ea;
-    border-radius: 8px;
-    background: white;
-}
-
 .events h2,
 .weather h2 {
     margin-top: 0;
-    color: var(--navy);
 }
 
 .events article+article {
@@ -433,15 +591,9 @@ button:focus-visible {
     padding-top: 10px;
 }
 
-.events h3,
-.weather h3 {
-    color: var(--navy);
-}
-
 #forecast p {
     margin: 8px 0;
 }
-
 
 #spotlights[aria-busy="true"] {
     min-height: 200px;
@@ -451,63 +603,19 @@ button:focus-visible {
     padding-top: 10px;
 }
 
-
-
-.join-main,
-.thankyou-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 18px;
-}
-
-.join-layout,
-.membership-cards {
-    display: grid;
-    gap: 20px;
-}
-
 .join-layout {
     margin-top: 20px;
 }
 
-.application-section form,
-.membership-card,
-.confirmation-card {
-    padding: 20px;
-    border: 1px solid #dce5ea;
-    border-radius: 8px;
-    background: white;
-}
-
 .application-section label {
-    display: block;
     margin-bottom: 15px;
-    font-weight: bold;
 }
 
 .application-section input:not([type="hidden"]),
 .application-section select,
 .application-section textarea {
-    display: block;
-    width: 100%;
     margin-top: 5px;
     padding: 10px;
-    font: inherit;
-}
-
-.submit-button,
-.return-button,
-.modal-link,
-.close-modal {
-    display: inline-block;
-    padding: 10px 15px;
-    border: 0;
-    border-radius: 6px;
-    background: var(--navy);
-    color: white;
-    font: inherit;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .membership-card {
@@ -529,13 +637,10 @@ button:focus-visible {
 .membership-modal {
     width: 90%;
     max-width: 500px;
-    padding: 20px;
-    border: 1px solid #dce5ea;
-    border-radius: 8px;
 }
 
 .membership-modal::backdrop {
-    background: rgb(0 0 0 / 60%);
+    background: #00000099;
 }
 
 .thankyou-main {
@@ -543,12 +648,7 @@ button:focus-visible {
 }
 
 .confirmation-details {
-    padding: 15px;
     background: var(--paper);
-}
-
-.confirmation-details p {
-    overflow-wrap: anywhere;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -557,32 +657,15 @@ button:focus-visible {
     }
 }
 
-/* Discover Page */
-
-.discover-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 18px;
-}
-
 .visitor-message {
+    min-height: 60px;
     padding: 15px 20px;
     margin-bottom: 24px;
     border-left: 4px solid #b07812;
-    border-radius: 6px;
     background: #fff0ca;
-    color: var(--navy);
-}
-
-.visitor-message p {
-    margin: 0;
-    font-weight: bold;
 }
 
 .discover-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
         "card1"
         "card2"
@@ -595,8 +678,6 @@ button:focus-visible {
 }
 
 .discover-card {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
         "title"
         "photo"
@@ -604,31 +685,19 @@ button:focus-visible {
         "description"
         "button";
     gap: 12px;
-    min-width: 0;
-    padding: 20px;
-    background: white;
-    border: 1px solid #dce5ea;
-    border-radius: 8px;
 }
 
 .discover-card h2 {
     grid-area: title;
-    margin: 0;
-    color: var(--navy);
     font-size: 1.3rem;
 }
 
 .discover-card figure {
     grid-area: photo;
-    margin: 0;
 }
 
 .discover-card img {
-    display: block;
-    width: 100%;
     aspect-ratio: 3 / 2;
-    object-fit: cover;
-    border-radius: 6px;
 }
 
 .discover-card address {
@@ -639,18 +708,10 @@ button:focus-visible {
 
 .discover-card p {
     grid-area: description;
-    margin: 0;
 }
 
 .discover-card button {
     grid-area: button;
-    padding: 10px 15px;
-    border: 0;
-    border-radius: 6px;
-    background: var(--navy);
-    color: white;
-    font: inherit;
-    cursor: pointer;
 }
 
 .discover-card button:hover {
@@ -659,8 +720,4 @@ button:focus-visible {
 
 .discover-grid:empty {
     min-height: 100vh;
-}
-
-.visitor-message {
-    min-height: 60px;
 }
