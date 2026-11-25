@@ -656,3 +656,11 @@ button:focus-visible {
 .discover-card button:hover {
     background: #114e72;
 }
+
+.discover-grid:empty {
+    min-height: 100vh;
+}
+
+.visitor-message {
+    min-height: 60px;
+}
